@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Video</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #00071a, #00182e); /* Dark blue gradient */
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      overflow: hidden; /* Prevent scrollbars due to floating div */
+    }
+
+    h1 {
+      font-size: 1em;
+      margin-top: 10px;
+      color: #00FFFF; /* Cyan Blue color */
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Glow effect */
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      position: relative;
+    }
+
+    video {
+      width: 280px;
+      height: 157px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Subtle glow effect */
+      outline: none;
+    }
+
+    .flower {
+      font-size: 5em;
+      margin-top: 20px;
+      animation: bloom 3s infinite; /* Blooming animation */
+    }
+
+    .greeting {
+      font-size: 1.5em;
+      margin-top: 10px;
+      color: #00FFFF; /* Cyan Blue color */
+      text-shadow: 0 0 8px rgba(0, 255, 255, 0.6); /* Glow effect */
+    }
+
+    .image-container {
+      margin-top: 20px;
+    }
+
+    .user-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @keyframes bloom {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Floating div with random text */
+    .floating-text {
+      position: absolute;
+      color: #00FFFF; /* Cyan Blue color */
+      font-size: 1.2em;
+      font-weight: bold; /* Bold text */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow effect */
+      animation: floatText 5s infinite;
+    }
+
+    @keyframes floatText {
+      0% {
+        top: 20%;
+        left: 30%;
+      }
+      25% {
+        top: 70%;
+        left: 70%;
+      }
+      50% {
+        top: 10%;
+        left: 50%;
+      }
+      75% {
+        top: 50%;
+        left: 20%;
+      }
+      100% {
+        top: 40%;
+        left: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Crush mo ako noh bakit mo pinindot?</h1>
+    <video controls autoplay>
+      <source src="video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="flower">&#127802;</div>
+    <div class="greeting">Flowers for you Myla Boo</div>
+    <div class="image-container">
+      <img class="user-image" src="heart.png" alt="User Image">
+    </div>
+    <!-- Floating div with random text -->
+    <div class="floating-text">Yiiee crush nya ako!</div>
+  </div>
+</body>
+</html>
